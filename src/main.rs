@@ -10,7 +10,7 @@ fn main() {
         // make obsidian backup
         "mkdir ~/backup/bckOp",
         "let date = (date now | date format %d_%m_%Y_%H_%M_%S)",
-        "cp -r ~/obsidian_vault/ $\"C:/Users/Pohl/backup/bckOp/obsidian_vault_($date)\"",
+        "cp -r ~/obsidian_vault/ $\"~/backup/bckOp/obsidian_vault_($date)\"",
     ];
 
     let args: String = collect_args(commands).expect("Unable to collect args");
